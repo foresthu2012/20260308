@@ -1,0 +1,23 @@
+# Niushop 合同签署插件 - 云编译文件清单
+# 所有需要打包到云编译环境的文件
+
+# 组件目录
+uni-app/components/ContractPreview/ContractPreview.vue
+
+# 页面目录
+uni-app/pages/contract/list.vue
+uni-app/pages/contract/detail.vue
+
+# API 目录
+uni-app/api/contract.ts
+
+# 工具目录
+# 注意: 已移除手写签名相关工具库 (signature.js, signature-core.js, mini-signature.js, signature-verified.js)
+# uni-app/utils/*.js
+
+# 语言包
+uni-app/locale/*.json
+
+# 配置文件
+uni-app/manifest.json
+uni-app/pages.json
