@@ -1,0 +1,16 @@
+name: Auto Sync Code
+on:
+push:
+branches: [main]
+jobs:
+sync:
+runs-on: ubuntu-latest
+steps:
+uses: actions/checkout@v4
+name: Commit and Push Changes
+run: |
+git config --global user.name "github-actions[bot]"
+git config --global user.email "github-actions[bot]@users.noreply.github.com"
+git add .
+git commit -m "Auto sync code from Codex"
+git push
